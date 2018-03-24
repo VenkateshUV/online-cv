@@ -18,17 +18,3 @@ var vid = document.getElementById("video-background");
 
     vid.playbackRate = 0.25;
 </script> 
-
-<script>
-    window.onload = function() { 
-  const vids = document.getElementsByTagName(`video`)
-  for (let i = 0; i < vids.length; i++) {
-    vids[i].addEventListener( `mouseover`, function(e) { 
-      vids[i].play()
-    })
-    vids[i].addEventListener( `mouseout`, function(e) {
-      vids[i].pause()
-    })
-  }
-}
-</script>
